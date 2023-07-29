@@ -64,18 +64,19 @@ def choose_Sheets():
     elif sheet[string2][index_In_xlsx] == 'RED':
       colors.append('#FF0000')
     elif sheet[string2][index_In_xlsx] == 'LIGHT GREEN':
-      colors.append('#D3FFD3')
+      colors.append('#90EE90')
     elif sheet[string2][index_In_xlsx] == 'DARK GREEN':
-      colors.append('#008000')
+      colors.append('#006400')
     elif sheet[string2][index_In_xlsx] == 'ORANGE':
       colors.append('#FF8000')
     elif sheet[string2][index_In_xlsx] == 'LIGHT YELLOW':
-      colors.append('#FFFFD7')
+      colors.append('#FFFF51')
     elif sheet[string2][index_In_xlsx] == 'DARK YELLOW':
-      colors.append('#D3FFD7')
+      colors.append('#FFBF25')
 
   texas.plot(color = colors, edgecolor = 'black', linewidth = 0.2, ax=fig.gca())
-
+  # Save as functionallity
+  plt.savefig('/Users/basavaprasadgola/Codes/Python/Texas_Map_coloring/dist/new.jpg')
 
 button2 = tk.Button(text="Choose Sheet", command=choose_Sheets)
 
